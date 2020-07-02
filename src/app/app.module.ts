@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { ServerComponent } from './server/server.component';
+import { CheckcompComponent } from './checkcomp/checkcomp.component';
+import { RouteModule} from './route/route.module'
 
 @NgModule({
   declarations: [
@@ -13,11 +15,13 @@ import { ServerComponent } from './server/server.component';
     WarningAlertComponent,
     SuccessAlertComponent,
     ServerComponent,
+    CheckcompComponent,
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouteModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
